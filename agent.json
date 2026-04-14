@@ -1,1 +1,35 @@
-{"id":"sin-teams","displayName":"sin teams","team":"team-messaging","description":"Team coordination and management — multi-agent team orchestration.","version":"1.0.0","deployment":{"workforceIndex":"https://a2a.delqhi.com","landingPage":"https://a2a.delqhi.com/agents/sin-teams","publicA2A":"https://a2a.delqhi.com/agents/sin-teams","cimdAnchor":"https://a2a.delqhi.com/agents/sin-teams"},"a2a":{"wellKnownCard":"/.well-known/agent-card.json","rpcPath":"/a2a/v1","transport":"jsonrpc-over-http"},"mcp":{"transport":"stdio","configPath":"./mcp-config.json"},"marketplace":{"pricingModel":"standard_tier","monthlyPrice":999,"purchaseModes":["subscription"],"category":"messaging"},"primaryModel":"openai/gpt-5.4"}
+{
+  "name": "A2A-SIN-Teams",
+  "slug": "a2a-sin-teams",
+  "type": "Messaging Agent",
+  "description": "Microsoft Teams integration agent",
+  "team": "Team Messaging",
+  "teamManager": "A2A-SIN-Messaging",
+  "primaryModel": "google/antigravity-gemini-3-flash",
+  "capabilities": [
+    "teams_messaging",
+    "channel_management",
+    "meeting_scheduling"
+  ],
+  "marketplace": {
+    "pricingModel": "subscription",
+    "monthlyPrice": 29.99,
+    "purchaseModes": [
+      "monthly",
+      "annual"
+    ],
+    "category": "messaging"
+  },
+  "controlPlane": {
+    "healthEndpoint": "/health",
+    "cardEndpoint": "/.well-known/agent-card.json",
+    "a2aEndpoint": "/a2a/v1"
+  },
+  "deployment": {
+    "workforceIndex": "team-messaging",
+    "landingPage": "https://a2a.delqhi.com/agents/a2a-sin-teams",
+    "publicA2A": "https://a2a.delqhi.com/a2a/v1/a2a-sin-teams",
+    "cimdAnchor": "https://a2a.delqhi.com/agents/a2a-sin-teams",
+    "vmServer": "hf-cpu-basic"
+  }
+}
