@@ -25,6 +25,21 @@ Thank you for your interest in contributing!
 - Write tests for new features
 - JSDoc on all exported functions
 
+## Boundary Rules
+
+Before adding a feature or top-level claim, answer:
+
+1. Is this about Teams messaging integration, or is it broader team-management truth?
+2. Does another OpenSIN repo already own the canonical source of truth?
+
+### Put it in `A2A-SIN-Teams` if:
+- it improves Teams messaging integration
+- it improves this repo's A2A agent behavior
+
+### Do NOT put it in `A2A-SIN-Teams` if:
+- it claims org-wide team registry ownership
+- it duplicates product, ops, or docs canon
+
 ## License
 
 By contributing, you agree that your contributions will be licensed under the MIT License.
